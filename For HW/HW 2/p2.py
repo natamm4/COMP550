@@ -12,10 +12,10 @@
 
 def coins(t):
     dimes = t // 10
-    t = t - dimes(10)
+    t = t - dimes * 10
     nickels = t // 5
-    t = t - nickels(5)
+    t = t - nickels * 5
     pennies = t
     return (dimes, nickels, pennies)
 
-print(coins(6))
+print(coins(1002))

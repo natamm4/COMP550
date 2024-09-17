@@ -4,5 +4,10 @@
 # G with one edge weight increased), explain why it’s correct, and analyze its running time.
 
 def weightChange(G, T, e):
-    M = []
+    # remove edge e from T, now T is 2 connected parts
+    # find new min-weight edge e' b/w the 2 parts of T that doesn't exist in T
+    # replace e w/ e'
+
+    # traverse T
+    new_T = T
     return M
